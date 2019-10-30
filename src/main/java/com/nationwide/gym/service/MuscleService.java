@@ -17,8 +17,18 @@ public class MuscleService {
 	public List<MuscleGroups> showAll() {
 		return repo.findAll();
 	}
+	public MuscleGroups editData(MuscleGroups muscleGroup) {
+		return repo.save(muscleGroup);
+	}
 
 	public MuscleGroups saveData(MuscleGroups muscleGroup) {
 		return repo.save(muscleGroup);
+	}
+	public void deleteData(Integer id) {
+		repo.deleteById(id);
+	}
+	public int editingrecord(String muscle, Integer id) {
+			
+		return repo.editingrecord(muscle, id);
 	}
 }

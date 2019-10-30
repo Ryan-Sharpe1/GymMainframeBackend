@@ -25,4 +25,12 @@ public class ExerciseService {
 	public void deleteData(Integer id) {
 		repo.deleteById(id);
 	}
+	public int editingrecord1(String exercise, Integer id) {
+		
+		return repo.editingrecord1(exercise, id);
+	}
+	public int editingrecord2(String musclegroup, Integer id) {
+		
+		return repo.editingrecord2(musclegroup, id);
+	}
 }
