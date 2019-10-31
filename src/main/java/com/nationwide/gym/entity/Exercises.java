@@ -7,32 +7,32 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
 @Entity
-//@NamedQueries(value= {
-//		@NamedQuery(
-//					name="exercises.filterChest",
-//					query="Select p from exercises p order by p.Chest"),
-//		@NamedQuery(
-//					name="exercises.filterShoulders",
-//					query="Select p from exercises p order by p.Shoulders"),
-//		@NamedQuery(
-//					name="exercises.filterBicep",
-//					query="Select p from exercises p order by p.Bicep"),
-//		@NamedQuery(
-//					name="exercises.filterTricep",
-//					query="Select p from exercises p order by p.Tricep"),
-//		@NamedQuery(
-//					name="exercises.filterBack",
-//					query="Select p from exercises p order by p.Back"),
-//		@NamedQuery(
-//					name="exercises.filterLegs",
-//					query="Select p from exercises p order by p.Legs"),
-//		@NamedQuery(
-//					name="exercises.filterCore",
-//					query="Select p from exercises p order by p.Core"),
-//		@NamedQuery(
-//					name="exercises.filterCardio",
-//					query="Select p from exercises p order by p.Cardio"),	
-//})
+@NamedQueries(value= {
+		@NamedQuery(
+					name="Exercises.filterChest",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterShoulders",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterBicep",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterTricep",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterBack",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterLegs",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterCore",
+					query="Select p from Exercises p order by p.musclegroup"),
+		@NamedQuery(
+					name="Exercises.filterCardio",
+					query="Select p from Exercises p order by p.musclegroup"),	
+})
 
 public class Exercises {
 

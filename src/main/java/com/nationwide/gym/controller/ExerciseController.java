@@ -1,5 +1,6 @@
 package com.nationwide.gym.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,5 +53,37 @@ public class ExerciseController {
 		exerciseService.deleteData(id);
 		return "Succesfully Deleted";
 	}
-
+	
+	@GetMapping("/exercise/filterChest")
+	public ArrayList<Exercises> filterChest(){
+		return exerciseService.filterChest();
+	}
+	@GetMapping("/exercise/filterBicep")
+	public ArrayList<Exercises> filterBicep(){
+		return exerciseService.filterBicep();
+	}
+	@GetMapping("/exercise/filterTricep")
+	public ArrayList<Exercises> filterTricep(){
+		return exerciseService.filterTricep();
+	}
+	@GetMapping("/exercise/filterBack")
+	public ArrayList<Exercises> filterBack(){
+		return exerciseService.filterBack();
+	}
+	@GetMapping("/exercise/filterShoulders")
+	public ArrayList<Exercises> filterShoulders(){
+		return exerciseService.filterShoulders();
+	}
+	@GetMapping("/exercise/filterCore")
+	public ArrayList<Exercises> filterCore(){
+		return exerciseService.filterCore();
+	}
+	@GetMapping("/exercise/filterCardio")
+	public ArrayList<Exercises> filterCardio(){
+		return exerciseService.filterCardio();
+	}
+	@GetMapping("/exercise/filterLegs")
+	public ArrayList<Exercises> filterLegs(){
+		return exerciseService.filterLegs();
+	}
 }

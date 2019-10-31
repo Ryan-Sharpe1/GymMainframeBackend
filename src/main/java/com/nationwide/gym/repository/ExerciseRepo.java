@@ -1,5 +1,7 @@
 package com.nationwide.gym.repository;
 
+import java.util.ArrayList;
+
 import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,6 +14,15 @@ import com.nationwide.gym.entity.Exercises;
 @Repository
 public interface ExerciseRepo extends JpaRepository<Exercises, Integer> {
 
+	public ArrayList<Exercises> filterChest();
+	public ArrayList<Exercises> filterBicep();
+	public ArrayList<Exercises> filterTricep();
+	public ArrayList<Exercises> filterShoulders();
+	public ArrayList<Exercises> filterBack();
+	public ArrayList<Exercises> filterCore();
+	public ArrayList<Exercises> filterCardio();
+	public ArrayList<Exercises> filterLegs();
+	
 	@Modifying
 	@Transactional
 	@Query(value="update Exercises m set m.exercise=?1 where m.exerciseid=?2")
@@ -22,4 +33,5 @@ public interface ExerciseRepo extends JpaRepository<Exercises, Integer> {
 	@Transactional
 	@Query(value="update Exercises m set m.musclegroup=?1 where m.exerciseid=?2")
 	public int editingrecord2(String musclegroup,int id);
+	
 }
