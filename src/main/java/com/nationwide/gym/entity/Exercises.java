@@ -9,30 +9,9 @@ import javax.persistence.NamedQuery;
 @Entity
 @NamedQueries(value= {
 		@NamedQuery(
-					name="Exercises.filterChest",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterShoulders",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterBicep",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterTricep",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterBack",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterLegs",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterCore",
-					query="Select p from Exercises p order by p.musclegroup"),
-		@NamedQuery(
-					name="Exercises.filterCardio",
-					query="Select p from Exercises p order by p.musclegroup"),	
-})
+					name="Exercises.filtermusclegroup",
+					query="Select p from Exercises p where p.musclegroup=?1"),
+		})
 
 public class Exercises {
 

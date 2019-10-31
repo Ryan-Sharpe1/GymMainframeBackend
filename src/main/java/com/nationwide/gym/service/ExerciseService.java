@@ -35,28 +35,7 @@ public class ExerciseService {
 		
 		return repo.editingrecord2(musclegroup, id);
 	}
-	public ArrayList<Exercises> filterChest(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterBicep(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterTricep(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterShoulders(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterBack(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterCore(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterCardio(){
-		return repo.filterChest();
-	}
-	public ArrayList<Exercises> filterLegs(){
-		return repo.filterChest();
+	public ArrayList<Exercises> filtermusclegroup(String musclegroup){
+		return repo.filtermusclegroup(musclegroup);
 	}
 }

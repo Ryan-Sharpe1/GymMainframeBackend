@@ -14,14 +14,7 @@ import com.nationwide.gym.entity.Exercises;
 @Repository
 public interface ExerciseRepo extends JpaRepository<Exercises, Integer> {
 
-	public ArrayList<Exercises> filterChest();
-	public ArrayList<Exercises> filterBicep();
-	public ArrayList<Exercises> filterTricep();
-	public ArrayList<Exercises> filterShoulders();
-	public ArrayList<Exercises> filterBack();
-	public ArrayList<Exercises> filterCore();
-	public ArrayList<Exercises> filterCardio();
-	public ArrayList<Exercises> filterLegs();
+	public ArrayList<Exercises> filtermusclegroup(String musclegroup);
 	
 	@Modifying
 	@Transactional
