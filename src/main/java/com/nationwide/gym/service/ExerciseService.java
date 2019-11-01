@@ -38,4 +38,9 @@ public class ExerciseService {
 	public ArrayList<Exercises> filtermusclegroup(String musclegroup){
 		return repo.filtermusclegroup(musclegroup);
 	}
+	public List<Exercises> filtermusclegroup1(String musclegroup){
+		return repo.findByMusclegroup(musclegroup);
+	}
+	
+	
 }

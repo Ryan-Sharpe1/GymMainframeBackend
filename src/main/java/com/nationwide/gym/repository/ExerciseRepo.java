@@ -1,6 +1,7 @@
 package com.nationwide.gym.repository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.transaction.Transactional;
 
@@ -27,4 +28,6 @@ public interface ExerciseRepo extends JpaRepository<Exercises, Integer> {
 	@Query(value="update Exercises m set m.musclegroup=?1 where m.exerciseid=?2")
 	public int editingrecord2(String musclegroup,int id);
 	
+	
+	public List<Exercises> findByMusclegroup(String egroup);
 }
