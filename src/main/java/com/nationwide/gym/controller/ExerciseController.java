@@ -54,6 +54,7 @@ public class ExerciseController {
 		return "Succesfully Deleted";
 	}
 	
+	@CrossOrigin
 	@GetMapping("/exercise/filtermusclegroup/{musclegroup}")
 	public ArrayList<Exercises> filtermusclegroup(@PathVariable String musclegroup) {
 		return exerciseService.filtermusclegroup(musclegroup);
