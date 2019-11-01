@@ -62,8 +62,8 @@ public class ExerciseController {
 	
 	@CrossOrigin
 	@GetMapping("/exercise1/filtermusclegroup/{musclegroup}")
-	public List<Exercises> filtermusclegroup1(@PathVariable String musclegroup) {
-		return exerciseService.filtermusclegroup1(musclegroup);
+	public ArrayList<Exercises> filtermusclegroup1(@PathVariable String musclegroup) {
+		return exerciseService.filtermusclegroup(musclegroup);
 	}
 	
 	
