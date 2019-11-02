@@ -31,9 +31,22 @@ public class ExerciseService {
 		
 		return repo.editingrecord1(exercise, id);
 	}
+	
 	public int editingrecord2(String musclegroup, Integer id) {
 		
 		return repo.editingrecord2(musclegroup, id);
+	}
+	public int editingrecord3(Integer sets, Integer id) {
+	
+		return repo.editingrecord3(sets, id);
+	}
+	public int editingrecord4(Integer reps, Integer id) {
+		
+		return repo.editingrecord4(reps, id);
+	}
+	public int editingrecord5(String weight, Integer id) {
+		
+		return repo.editingrecord5(weight, id);
 	}
 	public ArrayList<Exercises> filtermusclegroup(String musclegroup){
 		return repo.filtermusclegroup(musclegroup);
