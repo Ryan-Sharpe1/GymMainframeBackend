@@ -28,21 +28,21 @@ public interface ExerciseRepo extends JpaRepository<Exercises, Integer> {
 	@Query(value="update Exercises m set m.musclegroup=?1 where m.exerciseid=?2")
 	public int editingrecord2(String musclegroup,int id);
 	
-	@Modifying
-	@Transactional
-	@Query(value="update Exercises m set m.sets=?1 where m.exerciseid=?2")
-	public int editingrecord3(int sets,int id);
-	
-	@Modifying
-	@Transactional
-	@Query(value="update Exercises m set m.reps=?1 where m.exerciseid=?2")
-	public int editingrecord4(int reps,int id);
-	
-	@Modifying
-	@Transactional
-	@Query(value="update Exercises m set m.weight=?1 where m.exerciseid=?2")
-	public int editingrecord5(String weight,int id);
-	
+//	@Modifying
+//	@Transactional
+//	@Query(value="update Exercises m set m.sets=?1 where m.exerciseid=?2")
+//	public int editingrecord3(int sets,int id);
+//	
+//	@Modifying
+//	@Transactional
+//	@Query(value="update Exercises m set m.reps=?1 where m.exerciseid=?2")
+//	public int editingrecord4(int reps,int id);
+//	
+//	@Modifying
+//	@Transactional
+//	@Query(value="update Exercises m set m.weight=?1 where m.exerciseid=?2")
+//	public int editingrecord5(String weight,int id);
+//	
 	
 	public List<Exercises> findByMusclegroup(String egroup);
 }

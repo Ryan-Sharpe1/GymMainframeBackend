@@ -41,24 +41,24 @@ public class ExerciseController {
 		 exerciseService.editingrecord2(musclegroup,id);
 		return exerciseService.showAll();
 	}
-	@PutMapping("/exerciseedit3/{id}/{sets}")
-	public List<Exercises> editData3(@PathVariable Integer id, @PathVariable Integer sets) {
-	
-		 exerciseService.editingrecord3(sets,id);
-		return exerciseService.showAll();
-	}
-	@PutMapping("/exerciseedit4/{id}/{reps}")
-	public List<Exercises> editData4(@PathVariable Integer id, @PathVariable Integer reps) {
-	
-		 exerciseService.editingrecord4(reps,id);
-		return exerciseService.showAll();
-	}
-	@PutMapping("/exerciseedit5/{id}/{weight}")
-	public List<Exercises> editData5(@PathVariable Integer id, @PathVariable String weight) {
-	
-		 exerciseService.editingrecord5(weight,id);
-		return exerciseService.showAll();
-	}
+//	@PutMapping("/exerciseedit3/{id}/{sets}")
+//	public List<Exercises> editData3(@PathVariable Integer id, @PathVariable Integer sets) {
+//	
+//		 exerciseService.editingrecord3(sets,id);
+//		return exerciseService.showAll();
+//	}
+//	@PutMapping("/exerciseedit4/{id}/{reps}")
+//	public List<Exercises> editData4(@PathVariable Integer id, @PathVariable Integer reps) {
+//	
+//		 exerciseService.editingrecord4(reps,id);
+//		return exerciseService.showAll();
+//	}
+//	@PutMapping("/exerciseedit5/{id}/{weight}")
+//	public List<Exercises> editData5(@PathVariable Integer id, @PathVariable String weight) {
+//	
+//		 exerciseService.editingrecord5(weight,id);
+//		return exerciseService.showAll();
+//	}
 
 
 	@PostMapping("/exercise")

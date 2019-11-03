@@ -20,37 +20,37 @@ public class Exercises {
 	private Integer exerciseid;
 	private String exercise;
 	private String musclegroup;
-	private Integer sets;
-	private Integer reps;
-	private String weight;
+//	private Integer sets;
+//	private Integer reps;
+//	private String weight;
 	private String weekday;
 	
 	
 	
 	
-	public Integer getSets() {
-		return sets;
-	}
-
-	public void setSets(Integer sets) {
-		this.sets = sets;
-	}
-
-	public Integer getReps() {
-		return reps;
-	}
-
-	public void setReps(Integer reps) {
-		this.reps = reps;
-	}
-
-	public String getWeight() {
-		return weight;
-	}
-
-	public void setWeight(String weight) {
-		this.weight = weight;
-	}
+//	public Integer getSets() {
+//		return sets;
+//	}
+//
+//	public void setSets(Integer sets) {
+//		this.sets = sets;
+//	}
+//
+//	public Integer getReps() {
+//		return reps;
+//	}
+//
+//	public void setReps(Integer reps) {
+//		this.reps = reps;
+//	}
+//
+//	public String getWeight() {
+//		return weight;
+//	}
+//
+//	public void setWeight(String weight) {
+//		this.weight = weight;
+//	}
 
 	public String getWeekday() {
 		return weekday;
